@@ -45,30 +45,27 @@
                                                 <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7y-JM-API" userLabel="right">
                                                     <rect key="frame" x="207" y="0.0" width="207" height="300"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq2-F8-gYp">
-                                                            <rect key="frame" x="16" y="8.0000000000000018" width="177" height="28.666666666666671"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="28.666666666666671" id="kVV-HL-Zzx"/>
-                                                            </constraints>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq2-F8-gYp">
+                                                            <rect key="frame" x="16" y="8" width="177" height="28.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxf-Rl-fQs">
-                                                            <rect key="frame" x="16" y="46" width="177" height="246"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxf-Rl-fQs">
+                                                            <rect key="frame" x="8" y="59" width="191" height="233"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="zxf-Rl-fQs" firstAttribute="top" secondItem="Oq2-F8-gYp" secondAttribute="bottom" constant="9.3300000000000001" id="82S-nm-FGx"/>
-                                                        <constraint firstItem="Oq2-F8-gYp" firstAttribute="leading" secondItem="J7y-JM-API" secondAttribute="leading" constant="16" id="LyP-w7-roO"/>
-                                                        <constraint firstItem="zxf-Rl-fQs" firstAttribute="leading" secondItem="J7y-JM-API" secondAttribute="leading" constant="16" id="RD0-1w-X9a"/>
-                                                        <constraint firstAttribute="bottom" secondItem="zxf-Rl-fQs" secondAttribute="bottom" constant="8" id="Zkc-9h-JWi"/>
-                                                        <constraint firstAttribute="trailing" secondItem="zxf-Rl-fQs" secondAttribute="trailing" constant="14" id="g1z-oS-BdC"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Oq2-F8-gYp" secondAttribute="trailing" constant="14" id="iN6-ep-HUe"/>
-                                                        <constraint firstItem="Oq2-F8-gYp" firstAttribute="top" secondItem="J7y-JM-API" secondAttribute="top" constant="8" id="kpo-9E-PdI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Oq2-F8-gYp" secondAttribute="trailing" constant="14" id="EON-S6-BX8"/>
+                                                        <constraint firstItem="zxf-Rl-fQs" firstAttribute="top" secondItem="Oq2-F8-gYp" secondAttribute="bottom" constant="22.329999999999998" id="Frs-bA-Zko"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zxf-Rl-fQs" secondAttribute="bottom" constant="8" id="Jfq-Fc-BRw"/>
+                                                        <constraint firstItem="Oq2-F8-gYp" firstAttribute="top" secondItem="J7y-JM-API" secondAttribute="top" constant="8" id="SvM-HL-os7"/>
+                                                        <constraint firstItem="Oq2-F8-gYp" firstAttribute="leading" secondItem="J7y-JM-API" secondAttribute="leading" constant="16" id="U2z-o9-Qgj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zxf-Rl-fQs" secondAttribute="trailing" constant="8" id="nNX-mk-sCw"/>
+                                                        <constraint firstItem="zxf-Rl-fQs" firstAttribute="leading" secondItem="J7y-JM-API" secondAttribute="leading" constant="8" id="zWc-m4-zkY"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
