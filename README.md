@@ -23,4 +23,11 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="assignment1Demo.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+**Objectives Learned :**
+* Creating a Network Request to an API:
+  * Copying a chunk of code... should try to understand better what that chunk  actually means
+* Creating UITableViews: 
+  * Still don't understand the purpose of UITableViewDataSource and UITableViewDelegate.
+* Creating custom UITableCells:
+  * Pretty straight forward by creating a new Cocoa Touch Class.
+* Adding Pods to the project and using AlmaofireImage
