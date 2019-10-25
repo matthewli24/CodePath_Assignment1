@@ -80,4 +80,17 @@ class FlixViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
       
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = flixTableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // Pass selected movie to details view controller
+        let movieDetailsViewController = segue.destination as! MoviesDetailsViewController
+        movieDetailsViewController.movie = movie
+        
+        flixTableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }
