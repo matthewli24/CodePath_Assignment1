@@ -100,13 +100,18 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bl7-N6-27P">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bl7-N6-27P">
                                 <rect key="frame" x="20" y="215" width="111" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="c5E-YF-O0H" appends="YES" id="f4t-4M-qYQ"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvB-XK-IHf">
                                 <rect key="frame" x="139" y="281" width="248" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -128,11 +133,32 @@
                         <outlet property="movieOverviewLabel" destination="aNj-QL-W50" id="1OF-wK-hYa"/>
                         <outlet property="movieTitleLabel" destination="DvB-XK-IHf" id="yPR-ko-6aj"/>
                         <outlet property="posterImageView" destination="Bl7-N6-27P" id="vU9-oJ-hxJ"/>
+                        <segue destination="SxK-5g-t6s" kind="presentation" identifier="SuperHeroMovieTrailer" id="nra-Aa-cet"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gR-E7-lYx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="c5E-YF-O0H">
+                    <connections>
+                        <action selector="posterTapped:" destination="Wyj-Vh-2mx" id="CVY-G8-Yzq"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1118.840579710145" y="1298.6413043478262"/>
+        </scene>
+        <!--Super Hero Trailer View Controller-->
+        <scene sceneID="vnc-7K-n97">
+            <objects>
+                <viewController storyboardIdentifier="SuperHeroTrailerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SxK-5g-t6s" customClass="SuperHeroTrailerViewController" customModule="assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L4i-fw-7SV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5cT-qf-x2N"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3iV-IK-dBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118.840579710145" y="2092.663043478261"/>
         </scene>
         <!--Movies-->
         <scene sceneID="tne-QT-ifu">

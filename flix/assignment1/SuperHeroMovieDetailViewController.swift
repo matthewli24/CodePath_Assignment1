@@ -39,5 +39,19 @@ class SuperHeroMovieDetailViewController: UIViewController {
 
     }
     
+    @IBAction func posterTapped(_ sender: Any) {
+        performSegue(withIdentifier: "SuperHeroMovieTrailer", sender: nil)
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SuperHeroMovieTrailer" {
+            let superHeroTrailerVC = segue.destination as! SuperHeroTrailerViewController
+            superHeroTrailerVC.movieId = movie["id"] as! Int
+        }
+    }
+    
+    
 
 }
